@@ -32,5 +32,6 @@ assert h._validar(m(t="TICK"), BOB) is None                  # peer não manda T
 assert h._validar(b"x" * 1300, BOB) is None                  # grande demais
 h.estado = "RUNNING"
 assert h._validar(m(), BOB) is None                          # HELLO fora de estado
-assert h._validar(m(t="INPUT"), BOB)[0] == 1                 # INPUT em RUNNING pode
+assert h._validar(m(t="INPUT", iseq=1, dir="R", ack=0), BOB)[0] == 1   # INPUT completo em RUNNING pode
+assert h._validar(m(t="INPUT"), BOB) is None                 # INPUT sem iseq/dir/ack é inválido
 print("ok")

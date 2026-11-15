@@ -643,13 +643,14 @@ class Host:
         self.sock.setblocking(False)
         # Se a config pedir, troca o socket por um que simula perda e atraso de
         # rede. Útil pra testar o jogo em condições ruins.
-        sim = self.config.get("sim")
-        if sim:
-            from common.simnet import SimSocket
-            self.sock = SimSocket(self.sock, **sim)
+        sim = self.config.get("sim") or {}
+        if sim.get("loss") or sim.get("delay_ms") or sim.get("jitter_ms"):
+            from common.simnet import SimSocket  # só embrulha se houver perda/atraso de verdade
+            self.sock = SimSocket(self.sock, loss=sim.get("loss", 0.0),
+                                  delay_ms=sim.get("delay_ms", 0.0),
+                                  jitter_ms=sim.get("jitter_ms", 0.0), seed=sim.get("seed"))
             log.warning("REDE SIMULADA ativa: %s", sim)
-        log.info("Host escutando em %s:%s", bind_host, eu["port"])
-
+            
     def _receber_tudo(self):
         # Esvazia a fila do socket: lê tudo que chegou até agora e devolve a lista
         # de (dados, endereço). Como o socket não bloqueia, quando não tem mais
