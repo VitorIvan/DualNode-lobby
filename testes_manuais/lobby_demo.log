@@ -1,0 +1,171 @@
+2026-11-15 21:16:05,370 INFO lobby escutando em 0.0.0.0:5000 (IP na rede: 192.168.1.9)
+2026-11-15 21:16:59,251 INFO nova conexão de 127.0.0.1:38248
+2026-11-15 21:16:59,251 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:16:59,251 INFO REGISTER Ana (id 1) UDP 192.168.1.9:6001
+2026-11-15 21:16:59,251 INFO ERROR UNKNOWN_TYPE para Ana: tipo de mensagem desconhecido
+2026-11-15 21:16:59,753 INFO removendo Ana: fechou a conexão
+2026-11-15 21:34:30,606 INFO lobby escutando em 0.0.0.0:5000 (IP na rede: 192.168.1.9)
+2026-11-15 21:37:14,951 INFO nova conexão de 127.0.0.1:31342
+2026-11-15 21:37:14,952 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:14,952 INFO REGISTER Ana (id 2) UDP 192.168.1.9:6001
+2026-11-15 21:37:15,352 INFO removendo Ana: fechou a conexão
+2026-11-15 21:37:15,353 INFO nova conexão de 127.0.0.1:31343
+2026-11-15 21:37:16,083 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:16,083 INFO REGISTER Ana (id 3) UDP 192.168.1.9:6001
+2026-11-15 21:37:16,484 INFO removendo Ana: fechou a conexão
+2026-11-15 21:37:16,485 INFO nova conexão de 127.0.0.1:31344
+2026-11-15 21:37:16,497 INFO ERROR BAD_FORMAT para 127.0.0.1:31344: a linha não é um JSON válido do protocolo
+2026-11-15 21:37:16,898 INFO ERROR UNKNOWN_TYPE para 127.0.0.1:31344: tipo de mensagem desconhecido
+2026-11-15 21:37:17,299 INFO ERROR INVALID_PARAM para 127.0.0.1:31344: campo obrigatório faltando ou com tipo errado
+2026-11-15 21:37:17,700 INFO ERROR BAD_STATE para 127.0.0.1:31344: LIST_MATCHES não é aceito no estado CONNECTED
+2026-11-15 21:37:18,100 INFO ERROR INVALID_PARAM para 127.0.0.1:31344: nome deve ter 1 a 16 caracteres [A-Za-z0-9_-]
+2026-11-15 21:37:18,501 INFO ERROR INVALID_PARAM para 127.0.0.1:31344: udp_port deve estar entre 1024 e 65535
+2026-11-15 21:37:18,902 INFO ERROR INVALID_PARAM para 127.0.0.1:31344: udp_host deve ser um IPv4 numérico
+2026-11-15 21:37:19,303 INFO removendo 127.0.0.1:31344: fechou a conexão
+2026-11-15 21:37:19,303 INFO nova conexão de 127.0.0.1:31345
+2026-11-15 21:37:19,325 INFO ERROR BAD_FORMAT para 127.0.0.1:31345: a linha não é um JSON válido do protocolo
+2026-11-15 21:37:19,325 INFO ERROR BAD_FORMAT para 127.0.0.1:31345: a linha não é um JSON válido do protocolo
+2026-11-15 21:37:19,325 INFO ERROR BAD_FORMAT para 127.0.0.1:31345: a linha não é um JSON válido do protocolo
+2026-11-15 21:37:19,326 INFO removendo 127.0.0.1:31345: 3 linhas inválidas seguidas
+2026-11-15 21:37:19,726 INFO nova conexão de 127.0.0.1:31346
+2026-11-15 21:37:19,727 INFO removendo 127.0.0.1:31346: linha maior que 4096 bytes
+2026-11-15 21:37:20,128 INFO nova conexão de 127.0.0.1:31347
+2026-11-15 21:37:20,152 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:20,152 INFO REGISTER Ana (id 4) UDP 192.168.1.9:6001
+2026-11-15 21:37:20,552 INFO nova conexão de 127.0.0.1:31348
+2026-11-15 21:37:20,571 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:20,571 INFO ERROR NAME_TAKEN para 127.0.0.1:31348: o nome Ana já está em uso
+2026-11-15 21:37:20,971 INFO removendo Ana: fechou a conexão
+2026-11-15 21:37:20,971 INFO removendo 127.0.0.1:31348: fechou a conexão
+2026-11-15 21:37:20,972 INFO nova conexão de 127.0.0.1:31349
+2026-11-15 21:37:20,972 INFO nova conexão de 127.0.0.1:31350
+2026-11-15 21:37:20,972 INFO nova conexão de 127.0.0.1:31351
+2026-11-15 21:37:20,973 INFO nova conexão de 127.0.0.1:31352
+2026-11-15 21:37:20,973 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:20,973 INFO REGISTER Ana (id 5) UDP 192.168.1.9:6001
+2026-11-15 21:37:21,174 INFO Bob veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:21,174 INFO REGISTER Bob (id 6) UDP 192.168.1.9:6002
+2026-11-15 21:37:21,374 INFO Cid veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:21,374 INFO REGISTER Cid (id 7) UDP 192.168.1.9:6003
+2026-11-15 21:37:21,575 INFO Dan veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:21,575 INFO REGISTER Dan (id 8) UDP 192.168.1.9:6004
+2026-11-15 21:37:21,775 INFO CREATE_MATCH m1 'sala3' por Ana (máx 3)
+2026-11-15 21:37:22,576 INFO JOIN_MATCH Bob entrou em m1 no slot 1
+2026-11-15 21:37:23,077 INFO JOIN_MATCH Cid entrou em m1 no slot 2
+2026-11-15 21:37:23,679 INFO ERROR MATCH_FULL para Dan: a partida m1 está cheia
+2026-11-15 21:37:24,079 INFO ERROR NOT_CREATOR para Bob: só o criador pode iniciar a partida
+2026-11-15 21:37:24,480 INFO MATCH_START m1: 0=Ana@192.168.1.9:6001, 1=Bob@192.168.1.9:6002, 2=Cid@192.168.1.9:6003
+2026-11-15 21:37:25,082 INFO ERROR MATCH_STARTED para Dan: a partida m1 já começou
+2026-11-15 21:37:25,482 INFO MATCH_END m1 informado por Ana: vencedor 1
+2026-11-15 21:37:26,192 INFO Bob voltou da partida m1
+2026-11-15 21:37:26,592 INFO removendo Ana: fechou a conexão
+2026-11-15 21:37:26,592 INFO removendo Bob: fechou a conexão
+2026-11-15 21:37:26,593 INFO removendo Dan: fechou a conexão
+2026-11-15 21:37:26,593 INFO removendo Cid: fechou a conexão
+2026-11-15 21:37:26,593 INFO nova conexão de 127.0.0.1:31353
+2026-11-15 21:37:26,593 INFO nova conexão de 127.0.0.1:31354
+2026-11-15 21:37:26,605 INFO nova conexão de 127.0.0.1:31355
+2026-11-15 21:37:26,605 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:26,605 INFO REGISTER Ana (id 9) UDP 192.168.1.9:6001
+2026-11-15 21:37:26,806 INFO Bob veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:26,806 INFO REGISTER Bob (id 10) UDP 192.168.1.9:6002
+2026-11-15 21:37:27,007 INFO Cid veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:27,007 INFO REGISTER Cid (id 11) UDP 192.168.1.9:6003
+2026-11-15 21:37:27,207 INFO CREATE_MATCH m2 'sala4' por Ana (máx 4)
+2026-11-15 21:37:27,608 INFO JOIN_MATCH Bob entrou em m2 no slot 1
+2026-11-15 21:37:28,108 INFO JOIN_MATCH Cid entrou em m2 no slot 2
+2026-11-15 21:37:28,710 INFO LEAVE_MATCH Cid saiu de m2
+2026-11-15 21:37:29,212 INFO LEAVE_MATCH Ana saiu de m2
+2026-11-15 21:37:29,212 INFO sala m2 cancelada: o criador saiu
+2026-11-15 21:37:29,612 INFO removendo Cid: fechou a conexão
+2026-11-15 21:37:29,613 INFO nova conexão de 127.0.0.1:31356
+2026-11-15 21:37:29,613 INFO Cid veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:37:29,613 INFO REGISTER Cid (id 12) UDP 192.168.1.9:6003
+2026-11-15 21:37:29,813 INFO CREATE_MATCH m3 'sala5' por Bob (máx 3)
+2026-11-15 21:37:30,214 INFO JOIN_MATCH Cid entrou em m3 no slot 1
+2026-11-15 21:37:30,715 INFO removendo Cid: fechou a conexão
+2026-11-15 21:37:31,115 INFO removendo Ana: fechou a conexão
+2026-11-15 21:37:31,116 INFO removendo Bob: fechou a conexão
+2026-11-15 21:37:31,116 INFO sala m3 cancelada: o criador saiu
+2026-11-15 21:38:02,480 INFO nova conexão de 127.0.0.1:49895
+2026-11-15 21:38:02,480 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:02,481 INFO REGISTER Ana (id 13) UDP 192.168.1.9:6001
+2026-11-15 21:38:02,881 INFO removendo Ana: fechou a conexão
+2026-11-15 21:38:02,881 INFO nova conexão de 127.0.0.1:49896
+2026-11-15 21:38:03,584 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:03,584 INFO REGISTER Ana (id 14) UDP 192.168.1.9:6001
+2026-11-15 21:38:03,985 INFO removendo Ana: fechou a conexão
+2026-11-15 21:38:03,986 INFO nova conexão de 127.0.0.1:49897
+2026-11-15 21:38:03,986 INFO ERROR BAD_FORMAT para 127.0.0.1:49897: a linha não é um JSON válido do protocolo
+2026-11-15 21:38:04,386 INFO ERROR UNKNOWN_TYPE para 127.0.0.1:49897: tipo de mensagem desconhecido
+2026-11-15 21:38:04,787 INFO ERROR INVALID_PARAM para 127.0.0.1:49897: campo obrigatório faltando ou com tipo errado
+2026-11-15 21:38:05,187 INFO ERROR BAD_STATE para 127.0.0.1:49897: LIST_MATCHES não é aceito no estado CONNECTED
+2026-11-15 21:38:05,587 INFO ERROR INVALID_PARAM para 127.0.0.1:49897: nome deve ter 1 a 16 caracteres [A-Za-z0-9_-]
+2026-11-15 21:38:05,988 INFO ERROR INVALID_PARAM para 127.0.0.1:49897: udp_port deve estar entre 1024 e 65535
+2026-11-15 21:38:06,388 INFO ERROR INVALID_PARAM para 127.0.0.1:49897: udp_host deve ser um IPv4 numérico
+2026-11-15 21:38:06,789 INFO removendo 127.0.0.1:49897: fechou a conexão
+2026-11-15 21:38:06,789 INFO nova conexão de 127.0.0.1:49898
+2026-11-15 21:38:06,810 INFO ERROR BAD_FORMAT para 127.0.0.1:49898: a linha não é um JSON válido do protocolo
+2026-11-15 21:38:06,810 INFO ERROR BAD_FORMAT para 127.0.0.1:49898: a linha não é um JSON válido do protocolo
+2026-11-15 21:38:06,810 INFO ERROR BAD_FORMAT para 127.0.0.1:49898: a linha não é um JSON válido do protocolo
+2026-11-15 21:38:06,811 INFO removendo 127.0.0.1:49898: 3 linhas inválidas seguidas
+2026-11-15 21:38:07,211 INFO nova conexão de 127.0.0.1:49899
+2026-11-15 21:38:07,235 INFO removendo 127.0.0.1:49899: linha maior que 4096 bytes
+2026-11-15 21:38:07,636 INFO nova conexão de 127.0.0.1:49900
+2026-11-15 21:38:07,636 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:07,636 INFO REGISTER Ana (id 15) UDP 192.168.1.9:6001
+2026-11-15 21:38:08,036 INFO nova conexão de 127.0.0.1:49901
+2026-11-15 21:38:08,037 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:08,037 INFO ERROR NAME_TAKEN para 127.0.0.1:49901: o nome Ana já está em uso
+2026-11-15 21:38:08,437 INFO removendo Ana: fechou a conexão
+2026-11-15 21:38:08,438 INFO removendo 127.0.0.1:49901: fechou a conexão
+2026-11-15 21:38:08,438 INFO nova conexão de 127.0.0.1:51722
+2026-11-15 21:38:08,438 INFO nova conexão de 127.0.0.1:51723
+2026-11-15 21:38:08,457 INFO nova conexão de 127.0.0.1:40410
+2026-11-15 21:38:08,457 INFO nova conexão de 127.0.0.1:40411
+2026-11-15 21:38:08,458 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:08,458 INFO REGISTER Ana (id 16) UDP 192.168.1.9:6001
+2026-11-15 21:38:08,658 INFO Bob veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:08,659 INFO REGISTER Bob (id 17) UDP 192.168.1.9:6002
+2026-11-15 21:38:08,859 INFO Cid veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:08,859 INFO REGISTER Cid (id 18) UDP 192.168.1.9:6003
+2026-11-15 21:38:09,060 INFO Dan veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:09,060 INFO REGISTER Dan (id 19) UDP 192.168.1.9:6004
+2026-11-15 21:38:09,260 INFO CREATE_MATCH m4 'sala3' por Ana (máx 3)
+2026-11-15 21:38:10,061 INFO JOIN_MATCH Bob entrou em m4 no slot 1
+2026-11-15 21:38:10,562 INFO JOIN_MATCH Cid entrou em m4 no slot 2
+2026-11-15 21:38:11,163 INFO ERROR MATCH_FULL para Dan: a partida m4 está cheia
+2026-11-15 21:38:11,563 INFO ERROR NOT_CREATOR para Bob: só o criador pode iniciar a partida
+2026-11-15 21:38:11,964 INFO MATCH_START m4: 0=Ana@192.168.1.9:6001, 1=Bob@192.168.1.9:6002, 2=Cid@192.168.1.9:6003
+2026-11-15 21:38:12,565 INFO ERROR MATCH_STARTED para Dan: a partida m4 já começou
+2026-11-15 21:38:12,966 INFO MATCH_END m4 informado por Ana: vencedor 1
+2026-11-15 21:38:13,676 INFO Bob voltou da partida m4
+2026-11-15 21:38:14,076 INFO removendo Ana: fechou a conexão
+2026-11-15 21:38:14,077 INFO removendo Cid: fechou a conexão
+2026-11-15 21:38:14,077 INFO removendo Bob: fechou a conexão
+2026-11-15 21:38:14,077 INFO removendo Dan: fechou a conexão
+2026-11-15 21:38:14,078 INFO nova conexão de 127.0.0.1:21223
+2026-11-15 21:38:14,101 INFO nova conexão de 127.0.0.1:21224
+2026-11-15 21:38:14,101 INFO nova conexão de 127.0.0.1:21225
+2026-11-15 21:38:14,102 INFO Ana veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:14,102 INFO REGISTER Ana (id 20) UDP 192.168.1.9:6001
+2026-11-15 21:38:14,302 INFO Bob veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:14,302 INFO REGISTER Bob (id 21) UDP 192.168.1.9:6002
+2026-11-15 21:38:14,503 INFO Cid veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:14,503 INFO REGISTER Cid (id 22) UDP 192.168.1.9:6003
+2026-11-15 21:38:14,703 INFO CREATE_MATCH m5 'sala4' por Ana (máx 4)
+2026-11-15 21:38:15,104 INFO JOIN_MATCH Bob entrou em m5 no slot 1
+2026-11-15 21:38:15,605 INFO JOIN_MATCH Cid entrou em m5 no slot 2
+2026-11-15 21:38:16,206 INFO LEAVE_MATCH Cid saiu de m5
+2026-11-15 21:38:16,707 INFO LEAVE_MATCH Ana saiu de m5
+2026-11-15 21:38:16,707 INFO sala m5 cancelada: o criador saiu
+2026-11-15 21:38:17,107 INFO removendo Cid: fechou a conexão
+2026-11-15 21:38:17,108 INFO nova conexão de 127.0.0.1:19240
+2026-11-15 21:38:17,108 INFO Cid veio de 127.0.0.1; anunciando 192.168.1.9 no lugar
+2026-11-15 21:38:17,108 INFO REGISTER Cid (id 23) UDP 192.168.1.9:6003
+2026-11-15 21:38:17,308 INFO CREATE_MATCH m6 'sala5' por Bob (máx 3)
+2026-11-15 21:38:17,709 INFO JOIN_MATCH Cid entrou em m6 no slot 1
+2026-11-15 21:38:18,210 INFO removendo Cid: fechou a conexão
+2026-11-15 21:38:18,611 INFO removendo Ana: fechou a conexão
+2026-11-15 21:38:18,611 INFO removendo Bob: fechou a conexão
+2026-11-15 21:38:18,611 INFO sala m6 cancelada: o criador saiu
