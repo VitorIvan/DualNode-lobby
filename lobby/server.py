@@ -257,13 +257,15 @@ class LobbyServer:
         """PING periódico e remoção de quem ficou mudo.
 
         Quem está IN_GAME não recebe PING: durante a partida o jogador não lê o
-        TCP. A remoção por silêncio só vale em IN_ROOM, onde o cliente fica num
-        select e responde PONG; no menu (REGISTERED) ele pode ficar parado
-        digitando, então ali quem detecta a saída é o fechamento da conexão.
+        TCP. A remoção por silêncio vale em IN_ROOM, onde o cliente fica num
+        select e responde PONG, e em CONNECTED, porque o cliente de verdade manda
+        REGISTER assim que conecta (quem abre a conexão e fica mudo é lixo).
+        No menu (REGISTERED) o jogador pode ficar parado digitando, então ali
+        quem detecta a saída é o fechamento da conexão.
         """
         agora = time.monotonic()
         for j in list(self.jogadores.values()):
-            if j.estado == IN_ROOM and agora - j.visto > self.dead_s:
+            if j.estado in (CONNECTED, IN_ROOM) and agora - j.visto > self.dead_s:
                 self._remover(j, "sem resposta ao PING por %.0f s" % self.dead_s)
         if agora - self.ultimo_ping >= self.ping_s:
             self.ultimo_ping = agora
@@ -440,11 +442,13 @@ class LobbyServer:
             self._avisar_sala(sala, p.player_left(slot, j.nome))
 
 
-def configurar_log():
+def configurar_log(nivel="INFO"):
+    """Log no terminal e em logs/lobby.log. nivel vem de debug.log_level."""
     os.makedirs("logs", exist_ok=True)
     formato = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
     raiz = logging.getLogger()
-    raiz.setLevel(logging.INFO)
+    valor = getattr(logging, str(nivel).upper(), None)
+    raiz.setLevel(valor if isinstance(valor, int) else logging.INFO)
     for h in (logging.FileHandler("logs/lobby.log", encoding="utf-8"), logging.StreamHandler()):
         h.setFormatter(formato)
         raiz.addHandler(h)
@@ -456,7 +460,7 @@ def main():
     except ConfigError as e:
         print("Erro de configuração: %s" % e)
         sys.exit(2)
-    configurar_log()
+    configurar_log(cfg["debug"]["log_level"])
     # --host define onde o lobby escuta; sem ele, todas as interfaces.
     bind = args.lobby_host or "0.0.0.0"
     try:

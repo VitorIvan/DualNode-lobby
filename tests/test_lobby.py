@@ -261,6 +261,10 @@ class TestLobby(unittest.TestCase):
         self.assertEqual(saiu["name"], "J1")
         self.assertTrue(b.fechada())
 
+    def test_conexao_muda_sem_register_e_fechada(self):
+        c = self.cli()                             # conecta e não manda nada
+        self.assertTrue(c.fechada(timeout=2))
+
     def test_em_partida_nao_recebe_ping(self):
         a, outros, mid = self.sala_com(3)
         a.manda(p.start_match())
